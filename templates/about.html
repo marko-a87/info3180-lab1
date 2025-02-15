@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>About Page</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
   </head>
   <body>
     <h1>Shamar Malcolm</h1>
@@ -11,5 +15,9 @@
       I am developing for my INFO3180 course. I majored in Computer Science and
       this is my third year at unniveristy.
     </p>
+    <img
+      src="{{ url_for('static', filename='css/image.png') }}"
+      alt="UNN Logo"
+    />
   </body>
 </html>
